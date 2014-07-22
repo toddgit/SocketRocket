@@ -352,7 +352,7 @@ static __strong NSData *CRLFCRLF;
 {
     _inputStream.delegate = nil;
     _outputStream.delegate = nil;
-
+    self.delegate = nil;
     [_inputStream close];
     [_outputStream close];
     
